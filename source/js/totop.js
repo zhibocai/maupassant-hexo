@@ -1,6 +1,6 @@
-$(window).scroll(function() {
+function triggerRocket() {
     $(window).scrollTop() > 500 ? $("#rocket").addClass("show") : $("#rocket").removeClass("show");
-});
+}
 $("#rocket").click(function() {
     $("#rocket").addClass("launch");
     $("html, body").animate({
@@ -10,3 +10,5 @@ $("#rocket").click(function() {
     });
     return false;
 });
+$(window).scroll(triggerRocket);
+$(document).ready(triggerRocket);

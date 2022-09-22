@@ -1,7 +1,21 @@
-#footer= 'Copyright © 2022 '
-  a(href=url_for('/about/'), rel='nofollow')= config.title + '.'
-  |  Powered by
-  a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
-  a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
-  |  by
-  a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+#footer
+  div#footer-normal
+    ='Copyright © 2022 '
+    a(href=url_for('/about/'), rel='nofollow')= config.title + '.'
+    |  Powered by
+    a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
+    a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
+    |  by
+    a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+  div#footer-cn
+    ='Copyright © 2022 '
+    a(href=url_for('/about/'), rel='nofollow')= config.title
+    =' | '
+    a(href='https://beian.miit.gov.cn', rel='nofollow')= '桂ICP备2022008712号-1'
+    div
+      ='Powered by '
+      a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo
+      =' | '
+      a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
+      |  by
+      a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho

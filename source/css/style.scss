@@ -470,8 +470,11 @@ div {
     line-height: 2.5;
     color: #6E7173;
     text-align: center;
-    span {
-        font-size: .9em;
+    #footer-normal {
+        display: none;
+    }
+    #footer-cn {
+        display: none;
     }
 }
 
